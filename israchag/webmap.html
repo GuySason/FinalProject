@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>ישראחג-מפת אתר</title>
+    <meta name="description" content="מפת האתר של ישראחג" />
+    <meta name="keywords" content="מפת אתר, מפה, חגים, מועדים" />
+    <meta name="author" content="Guy sason, chen barsano, daniel ashkenazi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="styles/fontawesome/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/b6063fb939.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+</head>
+<body onload="tab_nav()">
+    <div id="container">
+        <div id="header">
+            <header role="banner">
+                <div id="skip"><a tabindex="1" title="דלג לתוכן המרכזי" href="#mainSpace">תחילתו של דף אינטרנט, לחצו אנטר כדי לעבור לתוכן המרכזי</a></div>
+                <a href="index.html"><img src="images/logo.jpg" alt="לוגו ישראחג" class="logo" /></a>
+                <nav aria-label="תפריט עליון" role="navigation">
+                    <ul>
+                        <li><a href="index.html" class="homenav"><span class="activepage">בית</span></a></li>
+                        <li>
+                            <a href="hagim.html" class="mainnav" aria-label="תפריט נפתח">חגים ומועדים<span class="arrow"><i class="fas fa-angle-down" aria-hidden="true"></i></span></a>
+
+                            <ul class="navv" id="myNav">
+                                <li>
+                                    <a href="hagim.html"><span class="holi">חגים</span></a>
+                                    <ul aria-label="תת תפריט חגים">
+                                        <li><a href="rosh hasana.html" class="abc" id="navopen">ראש השנה</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">סוכות</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">חנוכה</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">ט"ו בשבט</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">פורים</a></li>
+                                        <li><a href="pesah.html" class="abc" id="navopen">פסח</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">יום העצמאות</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">יום ירושלים</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">שבועות</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="hagim.html"><span class="navtit">מועדים</span></a>
+                                    <ul id="navtitnav" aria-label="תת תפריט מועדים">
+                                        <li class="line"><a href="#" aria-label="לא פעיל">צום גדליה</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">יום כיפור</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">שמחת תורה</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">צום עשרה בטבת</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">תענית אסתר</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">יום הזיכרון לשואה ולגבורה</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">יום הזיכרון לחללי מערכות ישראל</a></li>
+                                        <li class="line"><a href="lag.html" class="abc" id="navopen">ל"ג בעומר</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">צום שבעה עשר בתמוז</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">צום תשעה באב</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל" id="abcd">ט"ו באב</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="about us.html" class="mainnav">אודות</a></li>
+                        <li><a href="contact us.html" class="mainnav">צור קשר</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div id="mainSpace"></div>
+        <hr />
+        <main role="main">
+            <div class="row text-center" aria-label="מפת אתר">
+                <div class="col-md-2">
+                    <h6>
+                        <a href="index.html" class="active">בית</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6>
+                        <a href="hagim.html" class="active">חגים ומועדים</a>
+                    </h6>
+
+                    <p>
+                        <a href="hagim.html" class="active"><b>חגים</b></a><br />
+                        <a href=pesah.html class="active">פסח</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">שבועות</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">סוכות</a><br />
+                        <a href="rosh hasana.html" class="active">ראש השנה</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">חנוכה</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">פורים</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">עצמאות</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">יום ירושלים</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">ט"ו בשבט</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">ל"ג בעומר</a><br />
+                    </p>
+                    <p>
+                        <a href="hagim.html" class="active"><b>מועדים</b></a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">יום כיפור</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">יום הזיכרון לחללי מערכות ישראל</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">יום הזיכרון לשואה ולגבורה</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">ט"ו באב</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">צום עשרה בטבת</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">צום תשעה באב</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">צום שבעה עשר בתמוז</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">צום גדליה</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">תענית אסתר</a><br />
+                        <a href="" class="notActive" aria-label="לא פעיל">ט"ו בשבט</a><br />
+                        <a href="lag.html" class="active">ל"ג בעומר</a><br />
+                    </p>
+
+                </div>
+                <div class="col-md-2">
+                    <h6>
+                        <a href="about us.html" class="active">אודות</a>
+                    </h6>
+
+                </div>
+
+                <div class="col-md-2">
+                    <h6>
+                        <a href="contact us.html" class="active">צור קשר</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6>
+                        <a href="webmap.html" class="active">מפת אתר</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6>
+                        <a href="credits.html" class="active">קרדיטים</a>
+                    </h6>
+                </div>
+            </div>
+            <section role="region">
+                <img src="images/globus.jpg" alt="גלובוס מפת העולם" class="globus" />
+            </section>
+        </main>
+        <hr>
+        <footer role="contentinfo">
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+            <ul id="footer">
+                <li id="ftr"><a href="index.html#">בית |</a></li>
+                <li id="ftr"><a href="hagim.html">חגים ומועדים |</a></li>
+                <li id="ftr"><a href="about us.html">אודות |</a></li>
+                <li id="ftr"><a href="contact us.html">צור קשר |</a></li>
+                <li id="ftr"><a href="webmap.html">מפת אתר |</a></li>
+                <li id="ftr"><a href="credits.html">קרדיטים</a></li>
+            </ul>
+            <p>
+                <span class="text">
+                    כל הזכויות שמורות לחן ברסנו, דניאלה אשכנזי וגיא ששון  2019
+                    <span><i class="far fa-copyright"></i></span>
+                </span>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

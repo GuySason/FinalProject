@@ -1,0 +1,286 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>ישראחג-פסח</title>
+    <meta name="description" content="עמוד פנימי אודות חג הפסח" />
+    <meta name="keywords" content="פסח,מצות,חמץ,ליל הסדר,הגדה,אפיקומן,קמחא דפסחא,מרור,חזרת,ביצה,זרוע,חרוסת,כרפס,יציאת מצריים" />
+    <meta name="author" content="guy sason, chen barsano, daniel ashkenazi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="styles/fontawesome/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/b6063fb939.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+
+
+</head>
+<body onload="checkUrl(); tab_nav()">
+    <div id="container">
+        <div id="header">
+            <header role="banner">
+                <div id="skip"><a tabindex="1" title="דלג לתוכן המרכזי" href="#mainSpace">תחילתו של דף אינטרנט, לחצו אנטר כדי לעבור לתוכן המרכזי</a></div>
+                <a href="index.html"><img src="images/logo.jpg" alt="לוגו ישראחג" class="logo" /></a>
+                <nav aria-label="תפריט עליון" role="navigation">
+                    <ul>
+                        <li><a href="index.html" class="homenav"><span class="activepage">בית</span></a></li>
+                        <li>
+                            <a href="hagim.html" class="mainnav" aria-label="תפריט נפתח"> <span class="activepage">חגים ומועדים</span> <span class="arrow"><i class="fas fa-angle-down" aria-hidden="true"></i></span></a>
+
+                            <ul class="navv" id="myNav">
+                                <li>
+                                    <a href="hagim.html"><span class="holi">חגים</span></a>
+                                    <ul aria-label="תת תפריט חגים">
+                                        <li><a href="rosh hasana.html" class="abc" id="navopen">ראש השנה</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">סוכות</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">חנוכה</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">ט"ו בשבט</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">פורים</a></li>
+                                        <li><a href="pesah.html" class="abc" id="navopen">פסח</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">יום העצמאות</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">יום ירושלים</a></li>
+                                        <li><a href="#" aria-label="לא פעיל">שבועות</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="hagim.html"><span class="navtit">מועדים</span></a>
+                                    <ul id="navtitnav" aria-label="תת תפריט מועדים">
+                                        <li class="line"><a href="#" aria-label="לא פעיל">צום גדליה</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">יום כיפור</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">שמחת תורה</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">צום עשרה בטבת</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">תענית אסתר</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">יום הזיכרון לשואה ולגבורה</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">יום הזיכרון לחללי מערכות ישראל</a></li>
+                                        <li class="line"><a href="lag.html" class="abc" id="navopen">ל"ג בעומר</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">צום שבעה עשר בתמוז</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל">צום תשעה באב</a></li>
+                                        <li class="line"><a href="#" aria-label="לא פעיל" id="abcd">ט"ו באב</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="about us.html" class="mainnav">אודות</a></li>
+                        <li><a href="contact us.html" class="mainnav">צור קשר</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div id="mainSpace"></div>
+        <hr />
+        <main role="main">
+            <ul class="breadcrumb" role="navigation" aria-label="תפריט פירורי לחם">
+                <li><a href="index.html"><i class="fas fa-home"></i> בית</a></li>
+                <li><a href="hagim.html">חגים ומועדים</a></li>
+                <li>פסח</li>
+            </ul>
+            <div id="cc" aria-label="עמוד פנימי פסח">
+                <section role="region">
+                    <h1 class="a1">חג הפסח</h1>
+                    <h2 class="a2">יום רביעי, י"ד בניסן ה'תש"פ, 8 באפריל 2020</h2>
+                    <h3 class="a3">
+                        "וַאֲמַרְתֶּם זֶבַח פֶּסַח הוּא לַה' אֲשֶׁר פָּסַח עַל בָּתֵּי בְנֵי <br />ישְׂרָאֵל בְּמִצְרַיִם בְּנָגְפּוֹ אֶת מִצְרַיִם וְאֶת בָּתֵּינוּ הִצִּיל"
+                        <br />(ספר שמות, פרק י"ב, פסוק כ"ז)
+                    </h3>
+                    <img src="images/pesah.jpg" alt="מצה על צלחת" class="cover" />
+                </section>
+                <section role="tablist" aria-live="polite">
+                    <div class="myElement">
+                        <a href=#0 class="clickable" onclick="show_hide(this)">אודות החג <span class="arrowa"><i class="fas fa-caret-down"></i></span></a>
+                        <div class="content open2">
+                            <p id="aco">
+                                חג הפסח הוא החג היהודי הראשון מבין שלושת הרגלים (חגים שבהם מצווה מהתורה לעלות לרגל לבית המקדש בירושלים).
+                                פסח נחגג שבעה ימים, מט"ו בניסן ועד כ"א בניסן. היום הראשון והיום האחרון הם ימים טובים (תאריכים בלוח השנה היהודי שבו קבעה התורה חג ואסרה על קיום מלאכה כמו בימי שבת) והימים שביניהם מכונים חול המועד(מועדים שבהם לא ציוותה התורה לקיים יום טוב).
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="myhr" />
+                    <div class="myElement">
+                        <a href=#0 class="clickable" onclick="show_hide(this)" aria-controls="content" role="tab">מדוע חוגגים את חג הפסח? <span class="arrowa"><i class="fas fa-caret-down"></i></span></a>
+                        <div class="content" aria-controls="clickable" role="tab">
+                            <p id="aco1">
+                                חג הפסח מציין את יציאת בני ישראל מעבדות מצרים לחירות לאחר מכת
+                                בכורות, המכה האחרונה בעשר המכות שניתנו למצרים. <br />
+                                במכה זו מתו כל בכורי מצרים- בני ובנות, ילדים ומבוגרים.
+                                בעקבות מכה זו פרעה שילח את בני ישראל מארצו. <br />
+                                תחילה שבני ישראל נכנסו למצרים היה להם טוב אבל בהמשך מגיעות אליהם שנות רעב ושעבוד.<br />
+                                שנים אלה מביאות את העם למצב של מחנק ורצון
+                                לברוח מהמצב הזה ומשלטונו של פרעה. <br />
+                                שלטונו של פרעה מרחיק את עם ישראל איש מרעהו, מרעיב אותם, מעביד <br />
+                                אותם בפרך, בית סוהר אמיתי. <br />
+                                נקודת השיא של חג הפסח הוא ליל הסדר. <br />
+                                אנו חוגגים בו את הנקודה החשובה ביותר בחיי עם ישראל, לידת העם מחדש. <br />
+                                בליל הסדר אנו קוראים הגדה אשר מרכז ההגדה הוא סיפור יציאת מצרים <br />
+                                ומטרתו היא שנחזור ונספר את סיפור יציאת מצרים מדי שנה בשולחן. <br />
+                                חג הפסח מספר את מעברו של עם ישראל מעם של עבדות ועינויים שמהם <br />
+                                סבל במצרים לעם חירות.
+                                <img src="images/pesah1.jpg" alt="מצה עם ביצה אגוזים וכוס יין" class="pesah1" aria-label="מצה עם ביצה אגוזים וכוס יין"/>
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="myhr" />
+                    <div class="myElement">
+                        <a href=#0 class="clickable" onclick="show_hide(this)" aria-controls="content" role="tab">מהות השם<span class="arrowa"><i class="fas fa-caret-down"></i></span></a>
+                        <div class="content" aria-controls="clickable" role="tab">
+                            <p id="aco">
+                                שמו של החג נובע מהפסוק: "וַאֲמַרְתֶּם זֶבַח פֶּסַח הוּא לַה' אֲשֶׁר פָּסַח עַל בָּתֵּי בְנֵי יִשְׂרָאֵל בְּמִצְרַיִם בְּנָגְפּוֹ אֶת מִצְרַיִם וְאֶת בָּתֵּינוּ הִצִּיל" (ספר שמות, פרק י"ב, פסוק כ"ז).
+                                חג הפסח נקרא כך מכיוון שבמכת בכורות הקב"ה פסח (דילג) על בתי בני ישראל.
+
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="myhr" />
+                    <div class="myElement">
+                        <a href=#0 class="clickable" onclick="show_hide(this)" aria-controls="content" role="tab">שמות נוספים לחג<span class="arrowa"><i class="fas fa-caret-down"></i></span></a>
+                        <div class="content" aria-controls="clickable" role="tab">
+                            <p id="aco">
+                                <b>חג המצות</b>- נקרא כך על שם המצות הנאכלות במשך כל ימי החג ומזכירות לנו את "לחם העוני" אשר אכלו עם ישראל בצאתם ממצרים.<br />
+                                <b>חג החרות</b>- נקרא כך משום שבני ישראל יצאו מעבדות לחרות.<br />
+                                <b>חג האביב</b>- נקרא כך מכיוון שחל בעונת האביב.<br />
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="myhr" />
+                    <div class="myElement">
+                        <a href=#0 class="clickable" onclick="show_hide(this)" aria-controls="content" role="tab">מנהגים ומצוות החג <span class="arrowa"><i class="fas fa-caret-down"></i></span></a>
+                        <div class="content" aria-controls="clickable" role="tab">
+                            <p id="aco2">
+                                <span class="title">הגעלת כלים</span> <br />
+                                כלי האוכל בהם משתמשים ביום יום עוברים צחצוח והרתחה. בהרבה בתים יהודיים ישנה מערכת כלי פסח מיוחדת המאוחסנת במשך השנה ומשתמשים בה רק בפסח.<br />
+                                <span class="title">ביעור חמץ</span> <br />
+                                ניקיון של כל שרידי החמץ וכל פירורי מאפה בבית. <br /> החמץ הנמצא מובא לשרפה בבוקר של ערב פסח.<br />
+                                <img src="images/pesah2.jpg" alt="ביעור חמץ" class="pesah2" />
+                                <span class="title">חמץ</span><br />
+                                קמח או מאפה שהחמיץ ותפח. בחג הפסח לא אוכלים חמץ לזכר הבצק שלא החמיץ בחיפזון ביציאה ממצרים.<br />
+                                <span class="title">מצות</span>  <br />
+                                מאפה מקמח שלא החמיץ או תפח אותו נהוג לאכול בפסח במקום החמץ. <br />
+                                <span class="title">ליל הסדר</span>        <br />
+                                מתקיים בלילה הראשון של החג, זכר לליל השימורים ביציאת מצרים.
+                                יושבים סביב שולחן ערוך ומספרים את סיפור יציאת מצריים- מעבדות לחירות.<br />
+                                <span class="title">הגדה של פסח</span> <BR />
+                                קובץ מדרשי חז"ל, קטעים מן המקרא, ברכות מזמורים ושירים שנערכו כדי לספר ביציאת מצרים בליל הסדר. ההגדה החלה להתעצב בתקופת המשנה לאחר חורבן בית שני. המתכונת המוכרת לנו התעצבה כנראה בתקופת הגאונים (מאה 7 לספירה והלאה).<br />
+                                <img src="images/pesah3.jpg" alt="הגדה של פסח בשולחן ליל הסדר" class="pesah3" /><br />
+                                <span class="title">אפיקומן</span>             <br />
+                                המחצית הגדולה של המצה האמצעית משלוש מצות שולחן הסדר. לאחר בציעתה מוחבאת כזכר לצידה שצררו בני ישראל בצאתם ממצרים. יש מניחים את האפיקומן על הכתף להמחיש את זכר יציאת מצרים. נהוג להחביא את האפיקומן שילדי המשפחה יחפשו אותו.<br />
+                                <img src="images/pesah4.jpg" alt="אפיקומן על שולחן ליל הסדר" class="pesah4" /><br />
+                                <span class="title">קמחא דפסחא</span>      <br />
+                                היא מגבית צדקה מיוחדת הנהוגה לקראת הפסח, במסגרתה אוספים מהתושבים כסף או מזון על מנת לחלק לעניים מצרכים לפסח.<br />
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="myhr" />
+                    <div class="myElement">
+                        <a href=#0 class="clickable" onclick="show_hide(this)" aria-controls="content" role="tab">קערת הסדר<span class="arrowa"><i class="fas fa-caret-down"></i></span></a>
+                        <div class="content" aria-controls="clickable" role="tab">
+                            <p id="aco">
+                                ה'קערה' היא בעצם שלוש המצות המכוסות במפה (גם בין המצות יש להפריד במפיות).<br />
+                                על קערת ה'סדר' מציבים את ששה דברים, בצורה זו: <br />
+                                <img src="images/pesah5.jpg" alt="קערת הסדר" class="pesah5" />
+                                <span class="title">זרוע<img src="images/pesah6.jpg" alt="זרוע" height="40" width="55" /></span><br />
+                                גרגרת של עוף עם מעט בשר עליה, צלויה באש.<br />היא זכר ל'קרבן-פסח' שהיו מקריבים בזמן בית-המקדש.<br /> אין אוכלים את ה'זרוע'. יש להכין את ה'זרוע' מערב החג.<br />
+                                <span class="title">ביצה<img src="images/pesah7.jpg" alt="ביצה קשה" height="40" width="55" /></span><br />
+                                קשה, בקליפתה. זכר ל'קרבן-חגיגה' שהיו מקריבים בזמן בית- המקדש.<br /> אוכלים אותה בתחילת הסעודה.<br />
+                                <span class="title">מרור<img src="images/pesah8.jpg" alt="מרור" height="40" width="55" /></span><br />
+                                עלי חסה ושורש 'חזרת' ('חריין'). המרור נועד להזכיר לנו את מרירות חייהם של אבותינו במצרים ואוכלים אותו במהלך הסדר. כמות המרור המינימלית שיש לאכול היא 'כזית' - 19 גרם. אולם אם אוכלים קלח (שהוא דחוס יותר), דרוש להוסיף עוד 2 גרם, וכן עבור מה שנשאר בין השיניים.<br />
+                                <span class="title">חרוסת<img src="images/pesah9.jpg" alt="חרוסת" height="40" width="40" /></span><br />
+                                רסק תפוחי-עץ, אגסים ואגוזים טחונים, מתובלים ביין. החרוסת מזכירה את הטיט שבו עבדו אבותינו בפרך. טובלים בה את המרור.<br />
+                                <span class="title">כרפס<img src="images/pesah10.jpg" alt="כרפס" height="40" width="55" /></span><br />
+                                עיקרו - מין ירק. אפשר להשתמש בתפוח-אדמה מבושל או בפרוסת בצל. הספרדים נוהגים להשתמש בסלרי עלים. הוא נאכל בתחילת הסדר (פחות מ'כזית'), טבול במי-מלח, כדי להתמיה את הילדים.<br />
+                                <span class="title">חזרת<img src="images/pesah11.jpg" alt="חזרת" height="40" width="50" /></span><br />
+                                את ה'חזרת' אוכלים ב'כורך', דהיינו בתוך המצה, זכר למנהגו של הלל הזקן שהיה כורך את המצה והמרור יחדיו.<br />
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="myhr" />
+                    <div class="myElement">
+                        <a href=#0 class="clickable" id="peshachJ" onclick="show_hide(this)" aria-controls="content" role="tab">סיפור יציאת מצריים <span class="arrowa"><i class="fas fa-caret-down"></i></span></a>
+                        <div class="content" aria-controls="clickable" role="tab">
+                            <p id="aco3">
+                                לפני שנים רבות היה מלך רשע במצרים, פרעה שמו.פרעה העביד את בני ישראל בעבודה קשה מאד. פרעה ציווה להשליך ליאור כל בן זכר שיולד לבני ישראל. ובימים ההם נולד בן לאשה עבריה, יוכבד שמה. לקחה האישה תיבה קטנה, השכיבה בה את בנה ושמה אותה על שפת היאור. והנה בת פרעה ירדה לרחוץ בנהר. ראתה את התיבה ובתוכה תינוק. משתה בת פרעה את התיבה מן המים וקראה לילד משה.
+                                <img src="images/pesah12.jpg" alt="יציאת מצריים" class="pesah12" />
+                                הכה אלוהים את פרעה וכל מצריים בעשר מכות: דם, צפרדע, כינים, ערוב, דבר, שחין, ברד, ארבה, חושך, מכת בכורות.
+                                המכה העשירית, מכת בכורות הייתה הקשה מכולן. לאחר שבנו הבכור של פרעה מת, פרעה נכנע והסכים לשלוח את בני ישראל. ביום החמישה עשר בחודש ניסן יצאו בני ישראל ממצריים. לא היה להם זמן לאפות לחם ולכן אפו מצות. בני ישראל הלכו במדבר והגיעו עד ים סוף. ליד הים ראו כי המצרים רודפים אחריהם.
+                                <img src="images/pesah13.jpg" alt="מכות מצריים" class="pesah13" />
+                                בני ישראל צעקו לאלוהים שיציל אותם ואז קרה נס: משה הרים את מטהו והים נבקע לשניים. בני ישראל עברו ביבשה ואילו כל חייליו של פרעה טבעו בים. מאז בכל שנה אנו חוגגים בחודש ניסן את חג הפסח. אנו אוכלים מצות וקוראים בהגדה של פסח. לסעודה החגיגית קוראים: ליל הסדר. מצווה גדולה היא לספר לבנים על יציאת מצרים ועל הניסים שעשה אלוהים לבני ישראל במדבר. "והגדת לבנך".
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="myhr" />
+                    <div class="myElement">
+                        <a href=#0 class="clickable" onclick="show_hide(this)" aria-controls="content" role="tab">מתכון מנצח לכדורי שוקולד כשרים לפסח <span class="arrowa"><i class="fas fa-caret-down"></i></span></a>
+                        <div class="content" aria-controls="clickable" role="tab">
+                            <p id="aco">
+                                במקום הפתי בר (החמץ) שכולנו מכירים, נשתמש בעוגיות מצה עשירה.
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="circle"><SPAN id="top">זמן הכנה</SPAN><br />15 דק'</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="circle2"><SPAN id="top">רמת קושי</SPAN><br />כל אחד יכול</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="circle3"><SPAN id="top">כשרות</SPAN><br />כשר חלבי</div>
+                                    </div>
+                                </div>
+                                <img src="images/pesah15.png" alt="כשר לפסח" class="pesah15" />
+                                <ul id="acoul">
+                                    <span class="titlepesah">מצרכים</span>
+                                    <li><i class="fas fa-check"></i> 250 גרם עוגיות מצה עשירה</li>
+                                    <li><i class="fas fa-check"></i> 150 גרם שוקולד מריר</li>
+                                    <li><i class="fas fa-check"></i> רבע כוס חלב</li>
+                                    <li><i class="fas fa-check"></i> כף סוכר</li>
+                                    <li><i class="fas fa-check"></i> 50 גרם חמאה</li>
+                                    <li><i class="fas fa-check"></i> קוקוס או סוכריות צבעוניות לקישוט</li>
+
+                                </ul>
+                                <div>
+                                    <img src="images/pesah14.jpg" alt="כדורי שוקולד לאחר הכנה" class="pesah14" />
+                                    <span class="creditpesah">קרדיט : </span>
+                                    <a href="https://www.mako.co.il/food-recipes/recipes_column-desserts/Recipe-c4adc16d543b721006.htm" target="_self" class="creditnamepesah">ליה אור | Mako</a>
+                                </div>                                <ol id="aco4">
+                                    <span class="title">אופן ההכנה</span>
+                                    <li>טוחנים את עוגיות המצה העשירה במעבד מזון.</li>
+                                    <li>שמים את השוקולד, החלב, הסוכר והחמאה בקערה, ומכניסים  למיקרו ל-30 שניות.</li>
+                                    <li>מערבבים ומכניסים ל-30 שניות נוספות - כך עד שמתקבלת עיסת שוקולד הומוגנית.</li>
+                                    <li>מערבבים את העוגיות הטחונות עם השוקולד ומכניסים למקרר לצינון קצר (כחצי שעה).</li>
+                                    <li>יוצרים כדורים ומגלגלים אותם בתוך קערת קוקוס. מעבירים למנז'טים ושומרים במקרר.</li>
+                                </ol>
+                                <span class="title">בתיאבון!</span>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <hr>
+        <footer role="contentinfo">
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+            <ul id="footer">
+                <li id="ftr"><a href="index.html#">בית |</a></li>
+                <li id="ftr"><a href="hagim.html">חגים ומועדים |</a></li>
+                <li id="ftr"><a href="about us.html">אודות |</a></li>
+                <li id="ftr"><a href="contact us.html">צור קשר |</a></li>
+                <li id="ftr"><a href="webmap.html">מפת אתר |</a></li>
+                <li id="ftr"><a href="credits.html">קרדיטים</a></li>
+            </ul>
+            <p>
+                <span class="text">
+                    כל הזכויות שמורות לחן ברסנו, דניאלה אשכנזי וגיא ששון  2019
+                    <span><i class="far fa-copyright"></i></span>
+                </span>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html >
