@@ -368,7 +368,7 @@ hr {
     font-family: varela round;
     color: white;
     border: none;
-    margin: 25px 164px;
+    margin: 10px 170px;
 }
 
     .send:hover, .send:focus {
@@ -420,9 +420,10 @@ hr {
 
 #box {
     color: red;
-    margin-right: 20px;
+    margin-right: 34px;
     margin-top: 10px;
 }
+
 
 .contact {
     padding-top: 27px;
